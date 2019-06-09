@@ -4,30 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mod3</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
         <ul class="nav-menu">
-          <li class="nav-menu-item">
+          <li class="nav-menu-item" id="ls">
             <a href="#">Lifestyle</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item" id="ph">
             <a href="#">Photodiary</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item" id="mus">
             <a href="#">Music</a>
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item" id="tr">
             <a href="#">Travel</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
+    <main class="site-page container">
+      <article class="info-block">
         <img src="img/1.jpg" alt="There was an image" width="420" height+"280">
         <p class="name-of-photo">Lifestyle</p>
         <h1 class="article-headline">More than just a music festival</h1>
@@ -50,7 +59,7 @@
           voluptatem.
         </p>
       </article>
-      <article>
+      <article class="info-block">
         <img src="img/2.jpg" alt="There was an image" width="420" height+"280">
         <p class="name-of-photo">Lifestyle</p>
         <h1 class="article-headline">Life tastes better with coffee</h1>
@@ -73,7 +82,7 @@
           voluptatem.
         </p>
       </article>
-      <article>
+      <article class="info-block">
         <img src="img/3.jpg" alt="There was an image" width="420" height+"280">
         <p class="name-of-photo">Photodiary</p>
         <h1 class="article-headline">American dream</h1>
@@ -96,7 +105,7 @@
           voluptatem.
         </p>
       </article>
-      <article>
+      <article class="info-block">
         <img src="img/4.jpg" alt="There was an image" width="420" height+"280">
         <p class="name-of-photo">Photodiary</p>
         <h1 class="article-headline">A day exploring the Alps</h1>
@@ -119,7 +128,7 @@
           voluptatem.
         </p>
       </article>
-      <article>
+      <article class="info-block">
         <img src="img/5.jpg" alt="There was an image" width="420" height+"280">
         <p class="name-of-photo">Lifestyle</p>
         <h1 class="article-headline">Top 10 song for running</h1>
@@ -142,7 +151,7 @@
           voluptatem.
         </p>
       </article>
-      <article>
+      <article class="info-block">
         <img src="img/6.jpg" alt="There was an image" width="420" height+"280">
         <p class="name-of-photo">Lifestyle</p>
         <h1 class="article-headline">Cold winter days</h1>
@@ -165,7 +174,8 @@
           voluptatem.
         </p>
       </article>
-      <button>Load more</button>
+      <br>
+      <button class="button">Load more</button>
     </main>
   </body>
 </html>
