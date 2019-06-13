@@ -5,14 +5,9 @@
   line-height: 24px;
 }
 
-.wrapper {
+.container {
   width: 900px;
   margin: 0 auto;
-  margin-top: 72px;
-}
-
-header {
-  margin-bottom: 98px;
 }
 
 .nav-menu {
@@ -30,25 +25,13 @@ header {
   font-size: 14px;
   text-transform: uppercase;
   color: #626262;
-}
-
-.nav-menu li:nth-child(1) {
-  width: 71px;
+  padding-top: 72px;
+  padding-bottom: 98px;
   margin-right: 120px;
+
 }
 
-.nav-menu li:nth-child(2) {
-  width: 88px;
-  margin-right: 100px;
-}
-
-.nav-menu li:nth-child(3) {
-  width: 44px;
-  margin-right: 95px;
-}
-
-.nav-menu li:nth-child(4) {
-  width: 52px;
+.nav-menu li:last-child {
   margin-right: 0px;
 }
 
