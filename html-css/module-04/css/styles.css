@@ -7,18 +7,147 @@
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: 1110px;
 }
 
-.features-list {
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #555252;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-top: 36px;
+  margin-bottom: 105px;
+  float: left;
+}
+
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.navigation {
+  list-style: none;
+  float: right;
+}
+
+.navigation li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 32px;
+  padding-top: 9px;
+  margin-top: 36px;
+  margin-bottom: 105px;
+  float: left;
+}
+
+.navigation li a {
+  color: #0f0101;
+  text-decoration: none;
+}
+
+.navigation li a:hover,
+.navigation li a:focus {
+  color: #1abc9c;
+}
+
+.navigation li:last-child {
+  margin-right: 0px;
+}
+
+.list {
   list-style: none;
 }
 
+.section-name {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #555252;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.section-name::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  content: "";
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .product {
+  float: left;
+  width: 255px;
+  margin-right: 29px;
+  margin-bottom: 30px;
+}
+
+.product:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.product:nth-last-child(-n + 4) {
+  margin-bottom: 100px;
+}
+
+.product a {
+  display: inline-block;
+}
+
+.product a::before {
+  content: "";
   display: block;
   width: 255px;
-  height: 322px;
+  height: 282px;
   background-color: #e9f0fd;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p1::before {
+  background-image: url(../img/p1.png);
+}
+
+.p2::before {
+  background-image: url(../img/p2.png);
+}
+
+.p3::before {
+  background-image: url(../img/p3.png);
+}
+
+.p4::before {
+  background-image: url(../img/p4.png);
+}
+
+.p5::before {
+  background-image: url(../img/p5.png);
+}
+
+.p6::before {
+  background-image: url(../img/p6.png);
+}
+
+.p7::before {
+  background-image: url(../img/p7.png);
+}
+
+.p8::before {
+  background-image: url(../img/p8.png);
 }
 
 .name {
@@ -26,7 +155,8 @@
   height: 40px;
   background-color: #323232;
   float: left;
-  paddingleft: 13px;
+  padding-left: 13px;
+  text-align: left;
 }
 
 .price {
@@ -39,9 +169,71 @@
 
 .name,
 .price {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
   font-weight: 900;
   text-transform: uppercase;
   color: white;
+  padding-top: 4px;
+}
+
+.product:hover .name,
+.product:focus .name {
+  background-color: #1abc9c;
+}
+
+.product:hover .price,
+.product:focus .price {
+  background-color: #7fd9c7;
+}
+
+.news-item {
+  width: 350px;
+  margin-right: 29px;
+  margin-bottom: 82px;
+  float: left;
+}
+
+.news-item:last-child {
+  margin-right: 0px;
+}
+
+.news-title {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+
+.news-title::after {
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+  content: "";
+  margin-top: 12px;
+}
+
+.news-content {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+
+.news-button {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 26px;
+  padding: 12px 42px;
+  background-color: #4ec6ab;
+  border: 0px;
+  border-radius: 3px;
+  cursor: pointer;
 }
