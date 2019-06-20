@@ -111,48 +111,19 @@
 
 .product a {
   display: inline-block;
+  font-size: 0px;
 }
 
-.product a::before {
-  content: "";
-  display: block;
+.product-image {
+  text-align: center;
+  background-color: #e8effc;
   width: 255px;
   height: 282px;
-  background-color: #e9f0fd;
-  background-repeat: no-repeat;
-  background-position: center;
+  line-height: 282px;
 }
 
-.p1::before {
-  background-image: url(../img/p1.png);
-}
-
-.p2::before {
-  background-image: url(../img/p2.png);
-}
-
-.p3::before {
-  background-image: url(../img/p3.png);
-}
-
-.p4::before {
-  background-image: url(../img/p4.png);
-}
-
-.p5::before {
-  background-image: url(../img/p5.png);
-}
-
-.p6::before {
-  background-image: url(../img/p6.png);
-}
-
-.p7::before {
-  background-image: url(../img/p7.png);
-}
-
-.p8::before {
-  background-image: url(../img/p8.png);
+.product-image img {
+  vertical-align: middle;
 }
 
 .name {
