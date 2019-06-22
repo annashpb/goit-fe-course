@@ -120,12 +120,6 @@
   text-align: center;
   background-color: #e8effc;
   width: 255px;
-  height: 282px;
-  line-height: 282px;
-}
-
-.product-image img {
-  vertical-align: middle;
 }
 
 .name-price {
