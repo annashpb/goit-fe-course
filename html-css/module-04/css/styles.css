@@ -3,6 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .container {
@@ -195,7 +196,7 @@
   color: #555252;
   line-height: 26px;
   margin-bottom: 12px;
-}
+  }
 
 .news-button {
   display: inline-block;
