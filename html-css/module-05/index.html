@@ -32,14 +32,19 @@
     </header>
     <main>
       <section class="slider">
-        <button type="button" class="arrow-to-left"></button>
-        <button type="button" class="arrow-to-right"></button>
+        <div class="slider-buttons container">
+          <button type="button" class="arrow-to-left"></button>
+          <button type="button" class="arrow-to-right"></button>
+        </div>
         <ul class="slider-list">
           <li class="slider-list-item">
-            <div class="darken"></div>
             <img src="./img/slider.jpg" alt="There was an image" />
-            <h2 class="slider-name">Affordable Paris tours</h2>
-            <p class="slider-content">City tours /Tour tickets / Tour guides</p>
+            <div class="slider-text container">
+              <h2 class="slider-name">Affordable Paris tours</h2>
+              <p class="slider-content">
+                City tours /Tour tickets / Tour guides
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -180,7 +185,7 @@
     <footer>
       <p class="footer-content">
         All Rights Reserved © <cite>Dokan</cite> | Designed
-        <span class="designer-name">ThemenGraph</span>
+        <a href="#" class="designer-name">ThemenGraph</a>
       </p>
     </footer>
   </body>
