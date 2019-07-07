@@ -176,13 +176,6 @@ ul .icon-wd {
   padding-bottom: 15px;
 }
 
-/* .service-description {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #999999;
-} */
-
 .section-text {
   text-align: center;
   margin-bottom: 90px;
@@ -203,19 +196,13 @@ ul .icon-wd {
   width: 380px;
   height: 470px;
   background-color: #95e1d3;
+  transition: transform 200ms linear, box-shadow 200ms linear;
 }
 
 .team-member-photo img {
   display: block;
   position: absolute;
 }
-
-/* .team-list-item img {
-  width: 380px;
-  height: 470px;
-  background-color: #95e1d3;
-  
-} */
 
 .hover {
   position: absolute;
@@ -278,7 +265,6 @@ ul .icon-wd {
 
 .team-member-photo:hover > .hover {
   opacity: 1;
-  
 }
 
 .socials:hover,
@@ -343,7 +329,7 @@ ul .icon-wd {
   padding-left: 12px;
 }
 
-.input-mail::-webkit-input-placeholder {
+.input-mail::placeholder {
   font-style: italic;
   color: #e7e7e7;
 }
