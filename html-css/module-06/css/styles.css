@@ -9,7 +9,7 @@
   color: #999999;
 }
 
-.wrapper {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
@@ -193,15 +193,12 @@ ul .icon-wd {
 
 .team-member-photo {
   position: relative;
-  width: 380px;
-  height: 470px;
   background-color: #95e1d3;
   transition: transform 200ms linear, box-shadow 200ms linear;
 }
 
 .team-member-photo img {
   display: block;
-  position: absolute;
 }
 
 .hover {
