@@ -1,0 +1,204 @@
+/* montserrat-700 - latin_latin-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v13-latin_latin-ext-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v13-latin_latin-ext-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v19-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v19-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.first-screen {
+  background: #1a1915 url(../img/bg-image.png) center/cover no-repeat;
+  padding-top: 20px;
+  padding-bottom: 138px;
+}
+
+.site-header {
+  margin-bottom: 32px;
+}
+
+.authorization-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.authorization-menu-item {
+  list-style: none;
+  padding: 11px 17px;
+  /* border: 2px solid #ffffff;
+    border-radius: 20px; */
+}
+
+.authorization-menu-item a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.authorization-menu-item:active {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.slogan {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.look-for-button {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff4e50;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.partners {
+    padding-top: 70px;
+    padding-bottom: 58px;
+    text-align: center;
+}
+
+.section-name {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 22px; 
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.partners-list {
+    list-style: none;
+}
+
+.partners-list-item {
+    margin-bottom: 30px;
+}
+
+.partner-photo img {
+    display: block;
+}
+
+.partner-photo {
+    margin-bottom: 22px;
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 36px;
+    height: 36px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icontv {
+    background-color: #ff4e50;
+    background-image: url(../img/icons/icon1.png);
+}
+
+.icontube {
+    background-color: #ffa507;
+    background-image: url(../img/icons/icon2.png);
+}
+
+.iconcoffee {
+    background-color: #1cd7ad;
+    background-image: url(../img/icons/icon3.png);
+}
+
+.iconplane {
+    background-color: #4e73db;
+    background-image: url(../img/icons/icon4.png);
+}
+
+.partner-name {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px; 
+    color: #333333;
+    margin-bottom: 19px;
+}
+
+.partner-description {
+    font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+}
+
+.see-others-buton {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px; 
+    color: #ff4e50;
+    text-decoration: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 2px solid #ff4e50;
+    border-radius: 25px;
+}
