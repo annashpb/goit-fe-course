@@ -271,7 +271,7 @@
     margin-bottom: 60px;
   }
 
-  .partners-list-item:last-child(-n + 2) {
+  .partners-list-item:nth-last-child(-n + 2) {
     margin-bottom: 40px;
   }
 
