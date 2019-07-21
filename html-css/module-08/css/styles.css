@@ -49,24 +49,25 @@
 
 .authorization-menu-item {
   list-style: none;
-  padding: 11px 17px;
-  /* border: 2px solid #ffffff;
-    border-radius: 20px; */
 }
 
-.authorization-menu-item a {
-  text-decoration: none;
+.authorization-menu-item button {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
+  cursor: pointer;
+  padding: 11px 17px;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  transition: border 200ms linear;
 }
 
-.authorization-menu-item:active,
-.authorization-menu-item:hover,
-.authorization-menu-item:focus {
+.authorization-menu-item button:active,
+.authorization-menu-item button:hover,
+.authorization-menu-item button:focus {
   border: 2px solid #ffffff;
-  border-radius: 25px;
 }
 
 .logo {
@@ -136,15 +137,19 @@
 
 .partner-photo img {
   display: block;
+  border-radius: 50%;
 }
 
 .partner-photo {
+  display: block;
   margin-bottom: 22px;
   position: relative;
   display: inline-block;
 }
 
-.icon {
+.partner-photo::after {
+  content: "";
+  display: block;
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -154,24 +159,25 @@
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 100;
 }
 
-.icontv {
+.icontv::after {
   background-color: #ff4e50;
   background-image: url(../img/icons/icon1.png);
 }
 
-.icontube {
+.icontube::after {
   background-color: #ffa507;
   background-image: url(../img/icons/icon2.png);
 }
 
-.iconcoffee {
+.iconcoffee::after {
   background-color: #1cd7ad;
   background-image: url(../img/icons/icon3.png);
 }
 
-.iconplane {
+.iconplane::after {
   background-color: #4e73db;
   background-image: url(../img/icons/icon4.png);
 }
@@ -254,11 +260,11 @@
   .partners {
     padding-bottom: 40px;
     text-align: center;
-      }
+  }
 
-      .section-name {
-          padding-bottom: 40px;
-      }
+  .section-name {
+    padding-bottom: 40px;
+  }
 
   .partners-list {
     display: flex;
@@ -282,25 +288,25 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 940px;
-    }
+  .container {
+    max-width: 940px;
+  }
 
-    .promo {
-        max-width: 500px;
-        margin: 0 auto;
-    }
+  .promo {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-    .partners {
-        padding-bottom: 70px;
-    }
+  .partners {
+    padding-bottom: 70px;
+  }
 
   .partners-list {
-      flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .partners-list-item {
-      width: 23%;
-      margin-bottom: 40px;
+    width: 23%;
+    margin-bottom: 40px;
   }
 }
