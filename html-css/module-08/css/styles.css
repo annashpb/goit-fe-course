@@ -34,7 +34,8 @@
 .first-screen {
   background: #1a1915 url(../img/bg-image.png) center/cover no-repeat;
   padding-top: 20px;
-  padding-bottom: 138px;
+  position: relative;
+  height: 540px;
 }
 
 .site-header {
@@ -70,13 +71,28 @@
   border: 2px solid #ffffff;
 }
 
-.logo {
+.logo-header,
+.logo-slider {
   text-align: center;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+
+.logo-header {
+  display: none;
+}
+
+.logo-slider {
+  margin-bottom: 40px;
+}
+
+.slider {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
 }
 
 .slogan {
@@ -216,10 +232,13 @@
     max-width: 492px;
   }
 
+  .first-screen {
+    height: 700px;
+  }
+
   .site-header {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
     align-content: center;
     align-items: center;
     max-width: 660px;
@@ -227,8 +246,22 @@
     margin-bottom: 140px;
   }
 
+  .logo-header {
+    display: block;
+  }
+
   .authorization-menu {
     margin-bottom: 0px;
+  }
+
+  .slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo-slider {
+    display: none;
   }
 
   .slogan {
@@ -287,7 +320,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 940px;
   }
@@ -295,6 +328,13 @@
   .promo {
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .partners {
