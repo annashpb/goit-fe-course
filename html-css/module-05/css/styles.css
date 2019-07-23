@@ -77,11 +77,13 @@ main {
   width: 100%;
   display: inline-block;
   font-size: 0px;
+  margin-bottom: 102px;
 }
 
 .slider img {
   object-fit: contain;
   height: auto;
+  width: 100%;
 }
 
 .slider-list-item {
@@ -167,9 +169,10 @@ main {
   text-align: left;
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+  width: 800px;
 }
 
 .section-name {
@@ -179,7 +182,6 @@ main {
   color: #515151;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 102px;
   margin-bottom: 120px;
 }
 
@@ -204,10 +206,10 @@ main {
   margin-bottom: 100px;
 }
 
-.collection-item a {
+/* .collection-item a {
   text-decoration: none;
   display: inline-block;
-}
+} */
 
 .collection-item:last-child {
   margin-right: 0px;
@@ -221,14 +223,13 @@ main {
   background-color: #323232;
 }
 
-.name,
+.name a,
 .price {
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 32px;
   color: #ffffff;
-  padding-top: 5px;
 }
 
 .name {
@@ -236,6 +237,11 @@ main {
   height: 40px;
   padding-left: 13px;
   float: left;
+  padding-top: 5px;
+}
+
+.name a {
+  text-decoration: none;
 }
 
 .price {
@@ -244,6 +250,7 @@ main {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.44);
   float: right;
+  padding-top: 5px;
 }
 
 .hov {
