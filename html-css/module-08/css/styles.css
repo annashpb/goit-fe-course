@@ -41,7 +41,6 @@
 .authorization-menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
 }
 
 .authorization-menu-item {
@@ -243,10 +242,6 @@
 
   .logo-header {
     display: block;
-  }
-
-  .authorization-menu {
-    margin-bottom: 0px;
   }
 
   .slider {
