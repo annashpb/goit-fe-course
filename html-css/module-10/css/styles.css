@@ -146,19 +146,27 @@
   opacity: 1;
 }
 
+.navigation-action__item {
+  margin-right: 30px;
+}
+
 .navigation-action__item button {
   background-color: transparent;
   cursor: pointer;
-  width: 20px;
   height: 20px;
   border: none;
 }
 
 .icon-cart-btn,
 .icon-search-btn {
-  fill: #000000;
-  /* width: 20px;
-  height: 20px; */
+  fill: #fff;
+  width: 32px;
+}
+
+.icon-cart-btn:hover,
+.icon-search-btn:hover {
+  fill: #fce38a;
+  transition: linear .2s;
 }
 
 .slider {
