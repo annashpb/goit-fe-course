@@ -95,7 +95,26 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .first-screen {
-    background-image: url(../img/slider/slider-background@2x.jpg);
+    background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 128, 0.9))
+    ),
+    url(../img/slider/slider-background@2x.jpg);
+  background-image: -o-linear-gradient(
+      top,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 128, 0.9)
+    ),
+    url(../img/slider/slider-background@2x.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 128, 0.9)
+    ),
+    url(../img/slider/slider-background@2x.jpg);
+    /* background-image: url(../img/slider/slider-background@2x.jpg); */
   }
 }
 
@@ -312,23 +331,24 @@
 }
 
 .icon-ph {
-  background-image: url(../img/services-icons/service-icon-ph.svg);
+  background-image: url("../img/services-icons/symbol-defs.svg#service-icon-ph");
+  background-size: 32px 32px;
 }
 
 .icon-wd {
-  background-image: url(../img/services-icons/service-icon-wd.svg);
+  background-image: url("../img/services-icons/symbol-defs.svg#service-icon-wd");
 }
 
 .icon-cr {
-  background-image: url(../img/services-icons/service-icon-cr.svg);
+  background-image: url(../img/services-icons/symbol-defs.svg#service-icon-cr);
 }
 
 .icon-seo {
-  background-image: url(../img/services-icons/service-icon-seo.svg);
+  background-image: url(../img/services-icons/symbol-defs.svg#service-icon-seo);
 }
 
 .icon-ch {
-  background-image: url(../img/services-icons/service-icon-ch.svg);
+  background-image: url(../img/services-icons/symbol-defs.svg#service-icon-ch);
 }
 
 .icon-dg {
