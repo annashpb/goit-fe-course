@@ -385,11 +385,11 @@
 
 .team-section__team-list__item__photo {
   position: relative;
-  -webkit-transition: -webkit-transform 200ms linear;
-  transition: -webkit-transform 200ms linear;
-  -o-transition: transform 200ms linear;
-  transition: transform 200ms linear;
-  transition: transform 200ms linear, -webkit-transform 200ms linear;
+  -webkit-transition: -webkit-transform 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: -webkit-transform 200ms linear, -webkit-box-shadow 200ms linear;
+  -o-transition: transform 200ms linear, box-shadow 200ms linear;
+  transition: transform 200ms linear, box-shadow 200ms linear;
+  transition: transform 200ms linear, box-shadow 200ms linear, -webkit-transform 200ms linear, -webkit-box-shadow 200ms linear;
 }
 
 .team-section__team-list__item__photo img {
