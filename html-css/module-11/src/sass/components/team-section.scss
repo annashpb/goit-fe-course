@@ -1,0 +1,43 @@
+.team-section {
+    &__description {
+        @extend %secondary-font-set;
+        padding: 45px 125px 90px 125px;
+        text-align: center;
+    }
+    &__team-list {
+        @include flexing;
+        margin-bottom: 85px;
+        &__item {
+            list-style: none;
+            &__photo {
+                position: relative;
+                @include animation(transform);
+                @include animation(box-shadow);
+                & img {
+                    display: block;
+                }
+                &:hover .hover,
+                &:focus .hover {
+                    opacity: 1;
+                }
+                &:hover,
+                &:focus {
+                    transform: translate(-10px, -10px);
+                    box-shadow: 10px 10px $main-green-color;
+                }
+            }
+            &__name {
+                @extend %main-font-set;
+                color: $secondary-headline-text-color;
+                text-align: center;
+                padding-top: 30px;
+            }
+            &__position {
+                @extend %italic-text-set;
+                color: $secondary-text-color;
+                text-align: center;
+                padding-top: 10px;
+            }
+        }
+    }
+}

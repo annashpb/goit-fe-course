@@ -1,0 +1,77 @@
+.site-header {
+    padding-top: 30px;
+    @include flexing(no-wrap, space-between, '', flex-end);
+    &__logo a {
+       @extend %mr-font-bold;
+       font-size: 30px;
+       color: $main-text-color;
+       text-decoration: none;
+    }
+    &__navigation {
+        display: flex;
+    }
+  }
+
+  .navigation-menu {
+      list-style: none;
+      @include flexing(no-wrap, flex-end, '', '');
+      &__item {
+          margin-right: 55px;
+          & a {
+             @extend %main-font-set; 
+             color: $main-text-color;
+             text-decoration: none;
+             @include animation(color);
+             &::after {
+                 @extend %pseudo;
+                 width: auto;
+                height: 3px;
+                background-color: #fce38a;
+                margin-top: 10px;
+                opacity: 0;
+                @include animation(opacity)
+             }
+             &:hover,
+             &:focus {
+                 color: $main-yellow-color;
+                 &::after {
+                     opacity: 1;
+                 }
+             }
+          }
+      }
+  }
+
+.navigation-action {
+    list-style: none;
+    @include flexing(no-wrap, flex-end, '', '');
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__item button {
+        background-color: transparent;
+        cursor: pointer;
+        height: 20px;
+        border: none;
+    }
+}
+
+.icon-cart-btn {
+  fill: $main-text-color;
+  width: 32px;
+  @include animation(fill);
+  &:hover,
+  &:focus {
+      fill: $main-yellow-color;
+  }
+}
+
+.icon-search-btn {
+    fill: $main-text-color;
+    width: 32px;
+    @include animation(fill);
+    &:hover,
+    &:focus {
+        fill: $main-yellow-color;
+    }
+  }

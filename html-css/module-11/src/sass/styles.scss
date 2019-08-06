@@ -1,0 +1,16 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+@import './helpers/variables';
+@import './helpers/mixins.scss';
+@import './helpers/selectors.scss';
+@import './general';
+@import './components/first-screen';
+@import './components/header';
+@import './components/slider';
+@import './components/section-headline';
+@import './components/services-section';
+@import './components/team-item-hover';
+@import './components/team-section';
+@import './components/footer'

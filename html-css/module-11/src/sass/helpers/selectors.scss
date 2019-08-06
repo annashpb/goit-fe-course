@@ -1,0 +1,47 @@
+%main-font-set {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+%main-font-set-bold {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+%mr-font-bold {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+
+%secondary-font-set {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+
+%italic-text-set {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+%kau-font {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+}
+
+%pseudo {
+  content: "";
+  display: block;
+}

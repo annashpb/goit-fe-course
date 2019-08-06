@@ -1,0 +1,31 @@
+.slider {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &__name {
+        @extend %kau-font;
+        font-size: 72px;
+        color: $main-text-color;
+        padding-bottom: 40px;
+    }
+    &__slogan {
+        @extend %mr-font-bold;
+        font-size: 150px;
+        color: $main-text-color;
+        text-transform: uppercase;
+        line-height: 140px;
+        padding-bottom: 105px;
+    }
+    &__button {
+        display: inline-block;
+        @extend %main-font-set-bold;
+        font-size: 14px;
+        color: $main-text-color;
+        text-decoration: none;
+        padding: 12px 30px;
+        border: $main-text-color solid 3px;
+    }
+  }

@@ -1,0 +1,11 @@
+@mixin animation ($rule: '', $time: 200ms, $property: linear) {
+    transition: $rule $time $property;
+}
+
+@mixin flexing($wrapping: no-wrap, $align-main: space-between, $align-content: '', $align-items: '') {
+    display: flex;
+    flex-wrap: $wrapping;
+    justify-content: $align-main;
+    align-content: $align-content;
+    align-items: $align-items;
+}

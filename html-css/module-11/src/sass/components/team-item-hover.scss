@@ -1,0 +1,52 @@
+.hover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(
+    to bottom,
+    rgba($main-red-color, 0.9),
+    rgba($main-yellow-color, 0.9)
+  );
+  @include flexing('', center, '', center);
+  opacity: 0;
+  @include animation(opacity);
+}
+
+.socials {
+    width: 56px;
+  height: 56px;
+  background-color: $main-yellow-color;
+  border: none;
+  cursor: pointer;
+  @include animation(background-color);
+  &:not(last-child) {
+      margin-right: 1px;
+  }
+  &:hover,
+  &:focus {
+      background-color: $main-red-color;
+  }
+}
+
+.icon- {
+    &fb {
+        width: 15px;
+    }
+    &twit,
+    &inst {
+        width: 26px;
+    }
+    &pint {
+        width: 20px;
+    }
+    &socials {
+        fill: $main-red-color;
+        @include animation(fill);
+    }
+}
+
+.socials:hover .icon-socials {
+    fill: $main-text-color;
+  }

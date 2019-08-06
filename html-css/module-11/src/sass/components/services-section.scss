@@ -1,0 +1,34 @@
+.services-section {
+    &__headline {
+        margin-top: 50px;
+    }
+    &__services-list {
+        @include flexing(wrap, space-between, '', '');
+        margin-top: 65px;
+        &__item {
+            list-style: none;
+            @include flexing('', '', flex-start, '');
+            width: 390px;
+            padding-bottom: 100px;
+            &__icon {
+                flex-basis: 90px;
+                text-align: center;
+            }
+            &__content {
+                flex-basis: 300px;
+            }
+            &__headline {
+                @extend %main-font-set;
+                color: $secondary-headline-text-color;
+                padding-bottom: 15px;
+            }
+            &__description {
+                @extend %secondary-font-set;
+            }
+        }
+    }
+}
+
+.services-icon {
+    width: 32px;
+}

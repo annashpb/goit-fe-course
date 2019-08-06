@@ -1,0 +1,47 @@
+.site-footer {
+    @include flexing(no-wrap, space-between, '', center);
+    padding: 10px 0px;
+    &::before {
+        @extend %pseudo;
+        width: 1200px;
+        height: 1px;
+        background-color: #e5e5e5;
+        position: absolute;
+        transform: translateY(-30px);
+    }
+    &__contacts {
+        @extend %main-font-set;
+        text-transform: none;
+        color: $secondary-headline-text-color;
+        & a {
+            text-decoration: none;
+            color: $main-red-color;
+        }
+    }
+    &__subscribe-form {
+        @include flexing(no-wrap, flex-end, '', '');
+        &__input-field {
+            @extend %secondary-font-set;
+            line-height: 1rem;
+            width: 230px;
+            height: 40px;
+            padding-left: 12px;
+            border: #e5e5e5 solid 1px;
+            &::placeholder {
+                @extend %italic-text-set;
+                color: #cccccc;
+            }
+        }
+        &__btn {
+            width: 150px;
+            height: 40px;
+            background-color: $main-green-color;
+            @extend %main-font-set-bold;
+            font-size: 14px;
+            color: $main-text-color;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
