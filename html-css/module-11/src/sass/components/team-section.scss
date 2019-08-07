@@ -11,8 +11,7 @@
             list-style: none;
             &__photo {
                 position: relative;
-                @include animation(transform);
-                @include animation(box-shadow);
+                transition: transform 200ms linear, box-shadow 200ms linear;
                 & img {
                     display: block;
                 }
