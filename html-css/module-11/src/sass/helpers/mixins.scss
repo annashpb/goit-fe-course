@@ -2,7 +2,7 @@
     transition: $rule $time $property;
 }
 
-@mixin flexing($wrapping: no-wrap, $align-main: space-between, $align-content: '', $align-items: '') {
+@mixin flexing($wrapping: nowrap, $align-main: space-between, $align-content: center, $align-items: center) {
     display: flex;
     flex-wrap: $wrapping;
     justify-content: $align-main;

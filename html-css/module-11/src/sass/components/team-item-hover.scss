@@ -9,7 +9,7 @@
     rgba($main-red-color, 0.9),
     rgba($main-yellow-color, 0.9)
   );
-  @include flexing('', center, '', center);
+  @include flexing(nowrap, center, center, center);
   opacity: 0;
   @include animation(opacity);
 }

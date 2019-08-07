@@ -1,6 +1,6 @@
 .site-header {
     padding-top: 30px;
-    @include flexing(no-wrap, space-between, '', flex-end);
+    @include flexing(nowrap, space-between, center, flex-end);
     &__logo a {
        @extend %mr-font-bold;
        font-size: 30px;
@@ -14,7 +14,7 @@
 
   .navigation-menu {
       list-style: none;
-      @include flexing(no-wrap, flex-end, '', '');
+      @include flexing(nowrap, flex-end);
       &__item {
           margin-right: 55px;
           & a {
@@ -44,7 +44,7 @@
 
 .navigation-action {
     list-style: none;
-    @include flexing(no-wrap, flex-end, '', '');
+    @include flexing(nowrap, flex-end);
     &__item:not(:last-child) {
         margin-right: 30px;
     }
